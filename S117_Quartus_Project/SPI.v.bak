@@ -1,0 +1,71 @@
+module SPI (
+			input wire MOSI ,
+			input wire SCK ,
+			input wire CS ,
+			output wire MISO ,
+			input wire mclk , 
+			input wire [7:0] load_data_input ,
+			input wire load_control_input 
+			
+			);
+
+
+reg [7:0] tx_REG ;
+reg [7:0] rx_REG ; 			
+reg [7:0] DR_REG ; 
+
+reg [2:0] tx_COUNTER ;
+reg [2:0] rx_COUNTER ; 
+reg reg_miso ; 
+
+
+reg DTR ; 
+
+
+
+
+// rx_REG and rx_COUNTER Logic 
+always@( posedge SCK or posedge CS ) begin 
+if ( CS == 1'b1 ) begin 
+rx_COUNTER <= 3'b000 ;
+DTR <= 1'b0 ; 
+end 
+else begin 
+
+rx_COUNTER <= rx_COUNTER + 1 ; 
+rx_REG[7:0] <= { rx_REG[6:0] , MOSI } ; 
+
+if ( rx_COUNTER == 3'b111 ) 
+DTR <= 1'b1 ; 
+else if ( rx_COUNTER == 3'b000 )
+DTR <= 1'b0 ; 
+
+end 
+end 
+
+ 
+
+// tx_COUNTER Logic 
+
+always@( posedge SCK or posedge CS )  begin 
+if ( CS == 1'b1 ) begin 
+tx_COUNTER <= 3'b111 ;
+reg_miso <= tx_REG[3'b111 ] ;   
+tx_REG <= 8'b10101010 ; 
+end 
+else begin 
+tx_COUNTER <= tx_COUNTER - 1; 
+reg_miso <= tx_REG[ tx_COUNTER ] ; 
+end 
+end 
+
+ 
+
+
+assign MISO = reg_miso ; 
+
+			
+endmodule 
+			
+	
+	

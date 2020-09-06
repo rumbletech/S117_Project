@@ -1,0 +1,89 @@
+# Compile of SPI_TB.v was successful with warnings.
+# Compile of SPI_TB.v was successful.
+vsim -gui work.SPI_TB
+# vsim -gui work.SPI_TB 
+# Loading work.SPI_TB
+# Loading work.main
+# Loading work.SPI
+# ** Warning: (vsim-3017) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Too few port connections. Expected 8, found 6.
+# 
+#         Region: /SPI_TB/MY_SPI
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'SEG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'DEG'.
+# 
+add wave -position insertpoint sim:/SPI_TB/MY_SPI/*
+run -all
+# ** Note: $finish    : C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(93)
+#    Time: 18 us  Iteration: 0  Instance: /SPI_TB
+# 1
+# Break in Module SPI_TB at C:/Users/Garmoosh/Desktop/s117/SPI_TB.v line 93
+quit -sim
+# Compile of SPI_TB.v was successful.
+vsim -gui work.SPI_TB
+# vsim -gui work.SPI_TB 
+# Loading work.SPI_TB
+# Loading work.main
+# Loading work.SPI
+# ** Warning: (vsim-3017) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Too few port connections. Expected 8, found 6.
+# 
+#         Region: /SPI_TB/MY_SPI
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'SEG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'DEG'.
+# 
+run -all
+# ** Note: $finish    : C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(93)
+#    Time: 36 us  Iteration: 0  Instance: /SPI_TB
+# 1
+# Break in Module SPI_TB at C:/Users/Garmoosh/Desktop/s117/SPI_TB.v line 93
+restart -f -nolist -nowave -nolog -nobreak -novirtuals -noassertions -nofcovers -noatv
+# ** Warning: (vsim-3017) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Too few port connections. Expected 8, found 6.
+# 
+#         Region: /SPI_TB/MY_SPI
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'SEG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'DEG'.
+# 
+add wave -position insertpoint sim:/SPI_TB/MY_SPI/*
+run -all
+# ** Note: $finish    : C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(93)
+#    Time: 36 us  Iteration: 0  Instance: /SPI_TB
+# 1
+# Break in Module SPI_TB at C:/Users/Garmoosh/Desktop/s117/SPI_TB.v line 93
+quit -sim
+# Compile of SPI_TB.v was successful.
+vsim -gui work.SPI_TB
+# vsim -gui work.SPI_TB 
+# Loading work.SPI_TB
+# Loading work.main
+# Loading work.SPI
+# ** Warning: (vsim-3017) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Too few port connections. Expected 8, found 6.
+# 
+#         Region: /SPI_TB/MY_SPI
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'SEG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'DEG'.
+# 
+run -all
+# Break key hit 
+# Simulation stop requested.
+quit -sim
+vsim -gui work.SPI_TB
+# vsim -gui work.SPI_TB 
+# Loading work.SPI_TB
+# Loading work.main
+# Loading work.SPI
+# ** Warning: (vsim-3017) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Too few port connections. Expected 8, found 6.
+# 
+#         Region: /SPI_TB/MY_SPI
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'SEG'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(17): [TFMPC] - Missing connection for port 'DEG'.
+# 
+add wave -position insertpoint sim:/SPI_TB/MY_SPI/*
+run -all
+# ** Note: $finish    : C:/Users/Garmoosh/Desktop/s117/SPI_TB.v(93)
+#    Time: 36 us  Iteration: 0  Instance: /SPI_TB
+# 1
+# Break in Module SPI_TB at C:/Users/Garmoosh/Desktop/s117/SPI_TB.v line 93

@@ -1,0 +1,216 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Garmoosh\Desktop\Selfishnet win 7
+vbinarytobcd
+Z1 !s100 SGbA0OPjZ_ga6=hjQE6?D0
+Z2 IYoT7Xk7Y<h=ja^VO`Ogj[1
+Z3 V231RNJjU1G6O[oUeQ^Uai0
+Z4 dC:\Users\Garmoosh\Desktop\s117
+Z5 w1598362475
+Z6 8C:/Users/Garmoosh/Desktop/Period counter/period_counter.v
+Z7 FC:/Users/Garmoosh/Desktop/Period counter/period_counter.v
+Z8 L0 178
+Z9 OV;L;10.1d;51
+r1
+31
+Z10 !s108 1598362480.387000
+Z11 !s107 C:/Users/Garmoosh/Desktop/Period counter/period_counter.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/Period counter/period_counter.v|
+Z13 o-work work -O0
+!i10b 1
+!s85 0
+!s101 -O0
+vd_edge
+Z14 !s100 Uijij?6B_z^lO0J<W;=Dn3
+Z15 I8]hkzkjGb5^M:Z7Y8W8701
+Z16 V5VKfcW`dI=Gf5`ZULodG_1
+R4
+Z17 w1595073798
+Z18 8C:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v
+Z19 FC:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v
+L0 1
+R9
+r1
+31
+Z20 !s108 1598629295.249000
+Z21 !s107 C:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v|
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vdff
+Z23 !s100 88eJKFlN^eUDQE1l2mIEA2
+Z24 I<jMNUHgFTmQMGUil:gb`P1
+Z25 VQOd68@dOn4^D<@9IGa];Y1
+R4
+R17
+R18
+R19
+L0 13
+R9
+r1
+31
+R20
+R21
+R22
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vdivider
+Z26 I0k91:z8a<=^@@U8lQIoK@2
+Z27 V@@d;[QQ[W1b];_N`e`G=J0
+R4
+Z28 w1598273298
+Z29 8C:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v
+Z30 FC:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v
+L0 1
+R9
+r1
+31
+R13
+Z31 !s100 OIQl7@@g;_d>H5k;3IS_Y1
+Z32 !s108 1598629298.049000
+Z33 !s107 C:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v|
+Z34 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmain
+Z35 ICGV<k^ZfA0@?dLUF1n[C@0
+Z36 VcICb;N6V6aYSiGJ`5kocG0
+R4
+Z37 w1598633188
+Z38 8C:/Users/Garmoosh/Desktop/s117/main.v
+Z39 FC:/Users/Garmoosh/Desktop/s117/main.v
+L0 4
+R9
+r1
+31
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/s117/main.v|
+R13
+Z41 !s100 a2fW<JIX3e_UDca1LE27D2
+Z42 !s108 1598633196.000000
+Z43 !s107 C:/Users/Garmoosh/Desktop/s117/main.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vperiod_counter
+Z44 !s100 kd?iZSY?2EUJHifm=Y<XV1
+Z45 I1S8QV=<Ff:>A0W2_9J9KY3
+Z46 V;4BKN]m<9o5fih1EBmgKC0
+R4
+R5
+R6
+R7
+L0 60
+R9
+r1
+31
+R10
+R11
+R12
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_file
+Z47 !s100 [U9=zmO[>[Dn@KzKaQV=Q1
+Z48 I4>FQf21bmM=azC@7G@dIj1
+Z49 VU9JWj]:<En<29dBGAzeKk0
+R4
+Z50 w1598036435
+Z51 8C:/Users/Garmoosh/Desktop/s117/reg_file.v
+Z52 FC:/Users/Garmoosh/Desktop/s117/reg_file.v
+L0 1
+R9
+r1
+31
+Z53 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/s117/reg_file.v|
+R13
+Z54 !s108 1598629294.186000
+Z55 !s107 C:/Users/Garmoosh/Desktop/s117/reg_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrising_edg
+Z56 !s100 d80QU41HjoeXEe0jJ^9SP3
+Z57 IQJKgCU994IzLc25H0mW0O3
+Z58 VTbK8SlJaBI>m[a>z6n3Fm1
+R4
+R5
+R6
+R7
+L0 36
+R9
+r1
+31
+R10
+R11
+R12
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI
+Z59 !s100 z5YNSPIa2fdZd_ldZ1mkk2
+Z60 ICjSnSa>F[>0:bM]NDfOY`1
+Z61 Vgc0BeW1C_RXWLKLe:oM942
+R4
+Z62 w1598435502
+Z63 8C:/Users/Garmoosh/Desktop/s117/SPI.v
+Z64 FC:/Users/Garmoosh/Desktop/s117/SPI.v
+L0 1
+R9
+r1
+31
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/s117/SPI.v|
+R13
+Z66 n@s@p@i
+Z67 !s108 1598629868.785000
+Z68 !s107 C:/Users/Garmoosh/Desktop/s117/SPI.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI_TB
+!i10b 1
+!s100 ODIb4c:S7DAFz7fh;H_dE3
+Ic0nI_BVd1iacN5CYR[ZPV2
+Z69 V<oBaAiX6QG^7@5:i^^WU[1
+R4
+w1598635159
+Z70 8C:/Users/Garmoosh/Desktop/s117/SPI_TB.v
+Z71 FC:/Users/Garmoosh/Desktop/s117/SPI_TB.v
+L0 1
+R9
+r1
+!s85 0
+31
+!s108 1598635164.945000
+!s107 C:/Users/Garmoosh/Desktop/s117/SPI_TB.v|
+Z72 !s90 -reportprogress|300|-work|work|C:/Users/Garmoosh/Desktop/s117/SPI_TB.v|
+!s101 -O0
+R13
+Z73 n@s@p@i_@t@b
+vtop
+Z74 IB4>Zf:[I@kXXRd5[YP5lJ0
+Z75 V;_Ck[ebTj970?5f_`AiTF3
+R4
+R5
+R6
+R7
+L0 1
+R9
+r1
+31
+R10
+R11
+R12
+R13
+Z76 !s100 =T1Jh<S<MD<[Sa:]<8F0V3
+!i10b 1
+!s85 0
+!s101 -O0

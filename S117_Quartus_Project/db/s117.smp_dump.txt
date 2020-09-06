@@ -1,0 +1,7 @@
+
+State Machine - |main|state
+Name state.STATE_FINISH state.STATE_WAIT state.STATE_READ state.STATE_IDLE 
+state.STATE_IDLE 0 0 0 0 
+state.STATE_READ 0 0 1 1 
+state.STATE_WAIT 0 1 0 1 
+state.STATE_FINISH 1 0 0 1 

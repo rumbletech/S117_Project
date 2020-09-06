@@ -1,0 +1,165 @@
+module reg_file ( clk ,reg_addr , wrd , reg_output , reg_input );
+
+parameter reg_size = 8 ; 
+
+// Register Addr 
+
+localparam S117_CNTR_ADDR  = 4'b0001 ;
+localparam S117_DIGEN_ADDR = 4'b0010 ;
+localparam S117_BADJ_ADDR  = 4'b0011 ;
+localparam S117_SEG0_ADDR  = 4'b0100 ;
+localparam S117_SEG1_ADDR  = 4'b0101 ;
+localparam S117_SEG2_ADDR  = 4'b0110 ;
+localparam S117_SEG3_ADDR  = 4'b0111 ;
+
+
+// CNTR Register Bit Positions 
+
+localparam S117_CNTR_PWRDN = 7 ;
+localparam S117_CNTR_TEST  = 6 ; 
+localparam S117_CNTR_CLKMD = 5 ;
+localparam S117_CNTR_POL  = 4 ; 
+localparam S117_CNTR_NC3  = 3 ; 
+localparam S117_CNTR_NC2  = 2 ; 
+localparam S117_CNTR_NC1  = 1 ; 
+localparam S117_CNTR_NC0  = 0 ; 
+
+// BADJ Register Bit Positions 
+
+localparam S117_BADJ_PWDMD7 = 7 ; 
+localparam S117_BADJ_PWDMD6 = 6 ; 
+localparam S117_BADJ_PWDMD5 = 5 ; 
+localparam S117_BADJ_PWDMD4 = 4 ; 
+localparam S117_BADJ_PWDMD3 = 3 ; 
+localparam S117_BADJ_PWDMD2 = 2 ; 
+localparam S117_BADJ_PWDMD1 = 1 ; 
+localparam S117_BADJ_PWDMD0 = 0 ; 
+
+// SEG0 Register Bit Positions 
+
+localparam S117_SEG0_SEG2_3 = 7 ;
+localparam S117_SEG0_SEG2_2 = 6 ;
+localparam S117_SEG0_SEG2_1 = 5 ;
+localparam S117_SEG0_SEG2_0 = 4 ;
+localparam S117_SEG0_SEG1_3 = 3 ;
+localparam S117_SEG0_SEG1_2 = 2 ;
+localparam S117_SEG0_SEG1_1 = 1 ;
+localparam S117_SEG0_SEG1_0 = 0 ;
+
+// SEG1 Register Bit Positions 
+
+localparam S117_SEG1_SEG4_3 = 7 ;
+localparam S117_SEG1_SEG4_2 = 6 ;
+localparam S117_SEG1_SEG4_1 = 5 ;
+localparam S117_SEG1_SEG4_0 = 4 ;
+localparam S117_SEG1_SEG3_3 = 3 ;
+localparam S117_SEG1_SEG3_2 = 2 ;
+localparam S117_SEG1_SEG3_1 = 1 ;
+localparam S117_SEG1_SEG3_0 = 0 ;
+
+// SEG2 Register Bit Positions 
+
+localparam S117_SEG2_SEG6_3 = 7 ;
+localparam S117_SEG2_SEG6_2 = 6 ;
+localparam S117_SEG2_SEG6_1 = 5 ;
+localparam S117_SEG2_SEG6_0 = 4 ;
+localparam S117_SEG2_SEG5_3 = 3 ;
+localparam S117_SEG2_SEG5_2 = 2 ;
+localparam S117_SEG2_SEG5_1 = 1 ;
+localparam S117_SEG2_SEG5_0 = 0 ;
+
+// SEG3 Register Bit Positions 
+
+localparam S117_SEG3_SEG8_3 = 7 ;
+localparam S117_SEG3_SEG8_2 = 6 ;
+localparam S117_SEG3_SEG8_1 = 5 ;
+localparam S117_SEG3_SEG8_0 = 4 ;
+localparam S117_SEG3_SEG7_3 = 3 ;
+localparam S117_SEG3_SEG7_2 = 2 ;
+localparam S117_SEG3_SEG7_1 = 1 ;
+localparam S117_SEG3_SEG7_0 = 0 ;
+
+// DIGEN Register Bit Positions 
+
+localparam S117_DIGEN_DIG8EN = 7 ;
+localparam S117_DIGEN_DIG7EN = 6 ;
+localparam S117_DIGEN_DIG6EN = 5 ;
+localparam S117_DIGEN_DIG5EN = 4 ;
+localparam S117_DIGEN_DIG4EN = 3 ;
+localparam S117_DIGEN_DIG3EN = 2 ;
+localparam S117_DIGEN_DIG2EN = 1 ;
+localparam S117_DIGEN_DIG1EN = 0 ;
+
+// Registers in the Register File 
+
+reg [reg_size-1:0] S117_CNTR ;
+reg [reg_size-1:0] S117_BADJ ;
+reg [reg_size-1:0] S117_SEG0 ;
+reg [reg_size-1:0] S117_SEG1 ;
+reg [reg_size-1:0] S117_SEG2 ;
+reg [reg_size-1:0] S117_SEG3 ;
+reg [reg_size-1:0] S117_DIGEN;
+reg [reg_size-1:0] S117_DUMMY;
+
+input [3:0] reg_addr ; 
+input wrd ; 
+input clk ; 
+input [reg_size-1:0] reg_input ; 
+output reg [reg_size-1:0] reg_output ;
+
+
+
+always@(posedge clk ) begin
+
+// Write Reg 
+if ( wrd == 1'b1 ) begin 
+
+case ( reg_addr ) 
+
+S117_CNTR_ADDR :  S117_CNTR <= reg_input ;  
+
+S117_DIGEN_ADDR : S117_DIGEN <= reg_input ;  
+
+S117_BADJ_ADDR : S117_BADJ <= reg_input ; 
+ 
+S117_SEG0_ADDR : S117_SEG0 <= reg_input ;  
+
+S117_SEG1_ADDR : S117_SEG1 <= reg_input ; 
+ 
+S117_SEG2_ADDR : S117_SEG2 <= reg_input ;  
+
+S117_SEG3_ADDR : S117_SEG3 <= reg_input ;  
+
+default : S117_DUMMY <= reg_input ; 
+
+endcase
+
+end
+
+else if ( wrd == 1'b0 ) begin 
+
+case ( reg_addr ) 
+
+S117_CNTR_ADDR :  reg_output <= S117_CNTR ;  
+
+S117_DIGEN_ADDR : reg_output <= S117_DIGEN ;  
+
+S117_BADJ_ADDR : reg_output <= S117_BADJ ; 
+ 
+S117_SEG0_ADDR : reg_output <= S117_SEG0 ;  
+
+S117_SEG1_ADDR : reg_output <= S117_SEG1 ; 
+ 
+S117_SEG2_ADDR : reg_output <= S117_SEG2 ;  
+
+S117_SEG3_ADDR : reg_output <= S117_SEG3 ;  
+
+default : reg_output <= S117_DUMMY ; 
+
+endcase
+
+end
+
+end
+
+endmodule

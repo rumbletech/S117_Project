@@ -1,0 +1,60 @@
+C:/Users/Garmoosh/Desktop/s117/SPI.v {1 {vlog -work work C:/Users/Garmoosh/Desktop/s117/SPI.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SPI
+
+Top level modules:
+	SPI
+
+} {} {}} {C:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v} {1 {vlog -work work {C:/Users/Garmoosh/Desktop/New folder/New folder (2)/D_edge2.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module d_edge
+-- Compiling module dff
+
+Top level modules:
+	d_edge
+
+} {} {}} C:/Users/Garmoosh/Desktop/s117/main.v {1 {vlog -work work C:/Users/Garmoosh/Desktop/s117/main.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} {C:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v} {1 {vlog -work work {C:/Users/Garmoosh/Desktop/New folder/New folder (2)/divider.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} C:/Users/Garmoosh/Desktop/s117/reg_file.v {1 {vlog -work work C:/Users/Garmoosh/Desktop/s117/reg_file.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {C:/Users/Garmoosh/Desktop/Period counter/period_counter.v} {1 {vlog -work work {C:/Users/Garmoosh/Desktop/Period counter/period_counter.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top
+-- Compiling module rising_edg
+-- Compiling module period_counter
+-- Compiling module divider
+-- Compiling module binarytobcd
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/Garmoosh/Desktop/s117/SPI_TB.v {1 {vlog -work work C:/Users/Garmoosh/Desktop/s117/SPI_TB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SPI_TB
+
+Top level modules:
+	SPI_TB
+
+} {} {}} {C:/Users/Garmoosh/Desktop/Period counter/rising_edg.v} {0 {vlog -work work {C:/Users/Garmoosh/Desktop/Period counter/rising_edg.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rising_edg
+** Error: C:/Users/Garmoosh/Desktop/Period counter/rising_edg.v(19): Register is illegal in left-hand side of continuous assignment
+
+} {4.0 5.0} {}}
